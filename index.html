@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <title>web designing</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <h1 id="logo">SREE<span>JESH</span></h1>
+        <ul class="nav-items" id="nav-items">
+            <li>
+                <a href="#" onclick="navClose()">Home</a>
+            </li>
+            <li>
+                <a href="#card-section" onclick="navClose()">Card</a>
+            </li>
+            <li>
+                <a onclick="navClose()" href="https://www.youtube.com/channel/UCaPRgaGx5c5xod5MMnUkvfA">Youtube</a>
+            </li>
+            <li>
+                <a onclick="navClose()"href="https://www.instagram.com/sreejesh_001/">Instagram</a>
+            </li>
+        </ul>
+       <div class="burger-menu" onclick="navSlide()">
+           <div class="line"></div>
+           <div class="line"></div>
+           <div class="line"></div>
+       </div>
+   </header>
+   <main class="land-screen">
+        <h1>Welcome!</h1>
+        <p>This website is created by SREEJESH to learn flex</p>
+        <a href="https://www.youtube.com/channel/UCNHxVXrwutxNTXaM2AbVLOw" class="get-started">Get started
+            <i class="fas fa-play"></i>
+          </a>
+    </main>
+    <section id="card-section">
+        <h1 class="card-section-header">Card section</h1>
+        <div class="cards-container">
+            <div class="card">
+             <img class="card-image" src="Photos/img/4518857_python_icon.png" alt="">
+             <h6>PYTHON</h6>
+             <p> Python is now one of the most popular and widely used progr amming languages in the world. Besides web and software development, Python is used for data analytics, machine learning, and even design. </p>
+            </div>
+            <div class="card">
+                <img class="card-image" src="photos/img/NicePng_anonymous-png_3221161(1).png" alt="">
+                <h6>ANONYMUS</h6>
+                <p>Even when the act is not illegal, anonymity can be used for offensive or disruptive communication. For example, some people use anonymity in order to say harmful things about other people, known as cyberbullying. Internet trolls use anonymity to harm discussions in online social platforms</p>
+               </div>
+               <div class="card">
+                <img class="card-image" src="photos/img/favpng_software-bug-computer-programming-programmer-software-testing-error.png" alt="">
+                <h6>BUG BOUNTY</h6>
+                <p>Bug bounty, in simple words, is a crowdsourced method of finding security issues in your application. ... This basically helps them gather the resources of the larger crowd to help them discover and fix security issues in their applications</p>
+               </div>
+               <div class="card">
+                <img class="card-image" src="photos/img/favpng_white-hat-metasploit-project-exploit-computer-security-penetration-test.png" alt="">
+                <h6>METASPLOIT</h6>
+                <p>The Metasploit framework is a very powerful tool which can be used by cybercriminals as well as ethical hackers to probe systematic vulnerabilities on networks and servers. Because it's an open-source framework </p>
+               </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <h1>Thank You!</h1>
+    </footer>
+</body>
+<script>
+    function navSlide(){
+        var navItems = document.getElementById("nav-items")
+        navItems.classList.toggle("nav-items--active")
+    }
+    function navClose(){
+        var navActive = document.getElementsByClassName("nav-items--active")
+        if(navActive[0]){
+            navActive[0].classList.toggle("nav-items--active")
+        }
+    }
+</script>
+</html>
